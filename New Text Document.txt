@@ -1,0 +1,6 @@
+public void set(){
+	this.=;
+}
+public get(){
+	return this.
+}

@@ -1,0 +1,21 @@
+D:\divya>java com.cts.run.CalcRun
+30
+DIVISION
+Exception in thread "main" java.lang.ArithmeticException: / by zero
+        at com.cts.calculator.Calculator.division(Calculator.java:11)
+        at com.cts.run.CalcRun.main(CalcRun.java:9)
+
+----------------------------------------------------------------------------------
+
+D:\divya>javac -d . CalcRun.java
+
+D:\divya>java com.cts.run.CalcRun
+Exception in thread "main" java.lang.NullPointerException
+        at com.cts.run.CalcRun.main(CalcRun.java:11)
+------------------------------------------------------------------------------------
+
+D:\divya>javac -d . CalcRun.java
+
+D:\divya>java com.cts.run.CalcRun
+DIVISION BY ZERO NOT POSSIBLE...java.lang.NullPointerException
+END OF MAIN

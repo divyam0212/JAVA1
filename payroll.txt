@@ -1,0 +1,32 @@
+create table login(username varchar(20),password varchar(20));
+
+create table employee(
+emp_id int primary key auto_increment,
+emp_name varchar(15) not null,
+emp_salary double,
+fk_address_id int references emp_address(address_id),
+fk_dept_id int references department(dept_id));
+
+create table department(
+dept_id int primary key auto_increment,
+dept_name varchar(20) not null,
+dept_location varchar(15) not null
+);
+
+create table emp_address(
+address_id int primary key auto_increment,
+street varchar(20) not null,
+city varchar(15) not null,
+state varchar(15) not null,
+country varchar(15) not null
+);
+
+create table skills(
+skill_id int primary key auto_increment,
+skill_name varchar(12));
+
+create table emp_skillset(
+fk_skill_id int references skills(skill_id),
+fk_emp_id int references employee(emp_id));
+
+-----------------------------------------------------------------------------
